@@ -1,0 +1,31 @@
+a1 = newArray(4,9, 13, 14, 15, 19, 20, 22);
+for (j=0; j<13; j++) {	
+i = a1[j];
+open("/Users/noreen/Library/Mobile Documents/com~apple~CloudDocs/Documents/MIT/Weiss Lab/microscopy/cnw1m4 timepoints 2/t96/" + d2s(i, 0) + "b.png");
+setMinAndMax(41, 112);
+run("RGB Color");
+run("8-bit");
+run("Threshold...");
+setThreshold(20, 255);
+run("Set Measurements...", "display area mean min integrated limit redirect=None decimal=3");
+run("Measure");
+close();
+open("/Users/noreen/Library/Mobile Documents/com~apple~CloudDocs/Documents/MIT/Weiss Lab/microscopy/cnw1m4 timepoints 2/t96/" + d2s(i, 0)  + "r.png");
+setMinAndMax(39, 174);
+run("RGB Color");
+run("8-bit");
+run("Threshold...");
+setThreshold(15, 255);
+run("Set Measurements...", "display area mean min integrated limit redirect=None decimal=3");
+run("Measure");
+close();
+open("/Users/noreen/Library/Mobile Documents/com~apple~CloudDocs/Documents/MIT/Weiss Lab/microscopy/cnw1m4 timepoints 2/t96/" + d2s(i, 0) + "y.png");
+setMinAndMax(22, 114);
+run("RGB Color");
+run("8-bit");
+run("Threshold...");
+setThreshold(15, 255);
+run("Set Measurements...", "display area mean min integrated limit redirect=None decimal=3");
+run("Measure");
+close();
+}
