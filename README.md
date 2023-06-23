@@ -1,6 +1,6 @@
 # synthetic-symmetry-breaking
 This code, flow cytometry data, and images accompany "Synthetic symmetry breaking and programmable multicellular structure formation",
-a manuscript published in Cell Systems.
+a manuscript published in Cell Systems in 2023.
 
 Analysis was performed in MATLAB and ImageJ. 
 
